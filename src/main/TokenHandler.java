@@ -1,4 +1,4 @@
-package tokenSupport;
+package main;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;
