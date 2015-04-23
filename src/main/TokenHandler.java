@@ -5,7 +5,6 @@ import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
@@ -161,4 +160,6 @@ public class TokenHandler {
 		default: throw new UnsupportedOperationException("The timeunit "+unit+" is not supported"); 
 		}
 	}
+
+
 }
