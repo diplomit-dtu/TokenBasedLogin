@@ -30,6 +30,7 @@ public class TokenHandler {
 
 	
 	public String createToken(String user_id){
+		if(user_id.contains("\n")) throw new IllegalArgumentException("User Id cannot contain line breaks!");
 		String signature = encrypt(SIGNATURE, SIGNATURE_KEY);
 		String timestamp = prettyTime();
 		String unixTime = String.valueOf(System.currentTimeMillis());
